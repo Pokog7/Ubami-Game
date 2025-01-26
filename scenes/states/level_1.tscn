@@ -1,0 +1,141 @@
+[gd_scene load_steps=10 format=3 uid="uid://dm8cgcqgddx4c"]
+
+[ext_resource type="Script" path="res://scenes/states/level_1.gd" id="1_utvq1"]
+[ext_resource type="Texture2D" uid="uid://cnhl3iqreetd1" path="res://assetsgraphics/level_template.png" id="1_vleta"]
+[ext_resource type="TileSet" uid="uid://bx1xhqgmrux1u" path="res://assetsgraphics/level_template.tres" id="4_8q841"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8yfvd"]
+size = Vector2(32, 240)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u3r7b"]
+size = Vector2(192, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q0uov"]
+size = Vector2(32, 16.0722)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ll8l5"]
+size = Vector2(64, 16.0722)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a08a5"]
+size = Vector2(192, 2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqb44"]
+size = Vector2(256, 253)
+
+[node name="Level_1" type="Node"]
+script = ExtResource("1_utvq1")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("4_8q841")
+format = 2
+layer_0/tile_data = PackedInt32Array(720902, 2, 1, 720903, 65538, 1, 720904, 65538, 1, 720905, 131074, 1, 524294, 2, 1, 524295, 65538, 1, 524296, 65538, 1, 524297, 131074, 1, 327686, 2, 1, 327687, 65538, 1, 327688, 65538, 1, 327689, 131074, 1, 327692, 2, 1, 327693, 65538, 1, 327694, 65538, 1, 327681, 65538, 1, 327682, 65538, 1, 327683, 131074, 1, 524289, 65538, 1, 524290, 65538, 1, 524291, 131074, 1, 720897, 65538, 1, 720898, 65538, 1, 720899, 131074, 1, 524300, 2, 1, 524301, 65538, 1, 524302, 65538, 1, 720908, 2, 1, 720909, 65538, 1, 720910, 65538, 1, 15, 2031621, 20, 0, 1835013, 20, 917504, 1835013, 22, 917519, 2031621, 22, 917505, 1900549, 22, 917506, 1900549, 22, 917507, 1900549, 22, 917508, 1900549, 22, 917509, 1900549, 22, 917510, 1900549, 22, 917511, 1900549, 22, 917512, 1966085, 22, 917513, 1966085, 22, 917514, 1966085, 22, 917515, 1966085, 22, 917516, 1966085, 22, 917517, 1966085, 22, 917518, 1966085, 22, 851968, 1835013, 22, 786432, 1835013, 21, 720896, 1835013, 21, 655360, 1835013, 21, 589824, 1835013, 21, 524288, 1835013, 21, 458752, 1835013, 21, 393216, 1835013, 21, 327680, 1835013, 21, 262144, 1835013, 21, 196608, 1835013, 21, 131072, 1835013, 21, 65536, 1835013, 21, 14, 65538, 1, 13, 65538, 0, 12, 65538, 0, 11, 65538, 0, 10, 65538, 0, 9, 65538, 0, 8, 65538, 0, 1, 65538, 1, 2, 65538, 0, 3, 65538, 0, 4, 65538, 0, 5, 65538, 0, 6, 65538, 0, 7, 65538, 0, 65537, 65538, 1, 131073, 65538, 1, 196609, 65538, 1, 262145, 65538, 1, 393217, 65538, 1, 458753, 65538, 1, 589825, 65538, 1, 655361, 65538, 1, 786433, 65538, 1, 851969, 65538, 1, 851982, 65538, 1, 786446, 65538, 1, 655374, 65538, 1, 589838, 65538, 1, 458766, 65538, 1, 393230, 65538, 1, 262158, 65538, 1, 196622, 65538, 1, 131086, 65538, 1, 65550, 65538, 1, 65551, 2031621, 21, 131087, 2031621, 21, 196623, 2031621, 21, 262159, 2031621, 21, 327695, 2031621, 21, 393231, 2031621, 21, 458767, 2031621, 22, 524303, 2031621, 22, 589839, 2031621, 22, 655375, 2031621, 22, 720911, 2031621, 22, 786447, 2031621, 22, 851983, 2031621, 22, 851981, 65539, 2, 851970, 65539, 2, 851971, 65539, 2, 851972, 65539, 2, 851973, 65539, 2, 851974, 65539, 2, 851975, 65539, 2, 851980, 65539, 2, 851979, 65539, 2, 851978, 65539, 2, 851977, 65539, 2, 851976, 65539, 2, 786445, 65539, 1, 786434, 65539, 1, 786435, 65539, 1, 786436, 65539, 1, 786437, 65539, 1, 786438, 65539, 1, 786439, 65539, 1, 786444, 65539, 1, 786443, 65539, 1, 786442, 65539, 1, 786441, 65539, 1, 786440, 65539, 1, 65538, 65539, 1, 65549, 65539, 1, 65539, 65539, 1, 65540, 1900551, 20, 65541, 1900551, 20, 65542, 1900551, 20, 65543, 65539, 1, 65548, 1966087, 20, 65547, 1966087, 20, 65546, 1966087, 20, 65545, 1966087, 20, 65544, 1966087, 20, 131074, 1900551, 21, 131075, 1900551, 21, 131076, 1900551, 21, 131077, 1900551, 21, 131078, 1900551, 21, 131079, 1900551, 21, 196610, 1900551, 21, 196611, 1900551, 21, 196612, 1900551, 21, 196613, 65539, 1, 196614, 65539, 1, 196615, 1900551, 21, 262147, 65539, 1, 262146, 1900551, 21, 262148, 1900551, 21, 262149, 1900551, 21, 262150, 1900551, 21, 262151, 1900551, 21, 327684, 65539, 1, 327685, 1900551, 21, 393218, 65540, 1, 393219, 1900551, 21, 393220, 1900551, 21, 393221, 1900551, 21, 393222, 1900551, 21, 393223, 1900551, 21, 458754, 1900551, 21, 458755, 1900551, 21, 458756, 1900551, 21, 458757, 65539, 1, 458758, 1900551, 21, 655362, 1900551, 21, 655363, 1900551, 21, 655364, 65539, 1, 589826, 65540, 1, 589827, 65540, 1, 589828, 1900551, 21, 524292, 1900551, 21, 720900, 65539, 1, 720901, 65539, 1, 655365, 1900551, 21, 589829, 1900551, 21, 524293, 1900551, 21, 589830, 1900551, 21, 589831, 65539, 1, 655367, 1900551, 21, 655366, 1900551, 21, 458759, 1900551, 21, 720907, 65539, 1, 720906, 65539, 1, 655373, 1966087, 21, 655372, 1966087, 21, 655371, 65539, 1, 655370, 1966087, 21, 655369, 1966087, 21, 655368, 1966087, 21, 589832, 1966087, 21, 589833, 1966087, 21, 589834, 1966087, 21, 589835, 1966087, 21, 589836, 65540, 1, 589837, 65540, 1, 524299, 1966087, 21, 524298, 1966087, 21, 458765, 1900551, 21, 458764, 1966087, 21, 458763, 1966087, 21, 458762, 1966087, 21, 458761, 1966087, 21, 458760, 1966087, 21, 393224, 1966087, 21, 393225, 1966087, 21, 393226, 65539, 1, 393227, 1966087, 21, 393228, 1966087, 21, 393229, 65540, 1, 262157, 65539, 1, 262156, 1966087, 21, 262155, 1966087, 21, 262154, 1966087, 21, 262153, 1966087, 21, 262152, 65539, 1, 196616, 1966087, 21, 196617, 1966087, 21, 196618, 1966087, 21, 196619, 65539, 1, 196620, 1966087, 21, 196621, 1966087, 21, 131085, 1966087, 21, 131084, 1966087, 21, 131083, 1966087, 21, 131082, 65539, 1, 131081, 1966087, 21, 131080, 1966087, 21, 327691, 1966087, 21, 327690, 1966087, 21)
+
+[node name="Markers" type="Node" parent="."]
+
+[node name="Left" type="Marker2D" parent="Markers" groups=["marker"]]
+position = Vector2(48, 17)
+
+[node name="Middle" type="Marker2D" parent="Markers" groups=["marker"]]
+position = Vector2(128, 17)
+
+[node name="Right" type="Marker2D" parent="Markers" groups=["marker"]]
+position = Vector2(208, 17)
+
+[node name="p_spawn_1" type="Marker2D" parent="Markers"]
+position = Vector2(212, 65)
+
+[node name="enemy_spawn_1" type="Marker2D" parent="Markers"]
+position = Vector2(128, 56)
+
+[node name="spawn_lv1" type="Marker2D" parent="Markers"]
+position = Vector2(43, 214)
+
+[node name="Bubbles" type="Node" parent="."]
+
+[node name="LevelLayout" type="StaticBody2D" parent="."]
+z_index = -1
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelLayout"]
+texture = ExtResource("1_vleta")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(16, 120)
+shape = SubResource("RectangleShape2D_8yfvd")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(240, 120)
+shape = SubResource("RectangleShape2D_8yfvd")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(128, 8)
+shape = SubResource("RectangleShape2D_u3r7b")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(128, 232)
+shape = SubResource("RectangleShape2D_u3r7b")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(48, 88.0361)
+shape = SubResource("RectangleShape2D_q0uov")
+one_way_collision = true
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(48, 136.036)
+shape = SubResource("RectangleShape2D_q0uov")
+one_way_collision = true
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(48, 184.036)
+shape = SubResource("RectangleShape2D_q0uov")
+one_way_collision = true
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(208, 88.0361)
+shape = SubResource("RectangleShape2D_q0uov")
+one_way_collision = true
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(208, 136.036)
+shape = SubResource("RectangleShape2D_q0uov")
+one_way_collision = true
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(208, 184.036)
+shape = SubResource("RectangleShape2D_q0uov")
+one_way_collision = true
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(128, 184.036)
+shape = SubResource("RectangleShape2D_ll8l5")
+one_way_collision = true
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(128, 136.036)
+shape = SubResource("RectangleShape2D_ll8l5")
+one_way_collision = true
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="LevelLayout"]
+position = Vector2(128, 88.0361)
+shape = SubResource("RectangleShape2D_ll8l5")
+one_way_collision = true
+
+[node name="Roof" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Roof"]
+position = Vector2(128, 17)
+shape = SubResource("RectangleShape2D_a08a5")
+debug_color = Color(0.976471, 0, 0.419608, 0.419608)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(129, 117)
+shape = SubResource("RectangleShape2D_tqb44")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

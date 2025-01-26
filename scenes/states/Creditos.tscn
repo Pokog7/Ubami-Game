@@ -1,0 +1,198 @@
+[gd_scene load_steps=5 format=3 uid="uid://wu1028110okd"]
+
+[ext_resource type="TileSet" uid="uid://bx1xhqgmrux1u" path="res://assetsgraphics/level_template.tres" id="1_krxwc"]
+[ext_resource type="Script" path="res://scenes/states/Creditos.gd" id="1_n7vvs"]
+[ext_resource type="FontFile" uid="uid://bcrd1e2884wwj" path="res://assetsgraphics/Resources/Cloude_Regular_1.02_edit.otf" id="2_whdmf"]
+[ext_resource type="AudioStream" uid="uid://jn5t7pf0f4cx" path="res://assetsgraphics/Resources/MenuMusic.wav" id="4_nvj02"]
+
+[node name="Node2D" type="Node"]
+script = ExtResource("1_n7vvs")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_krxwc")
+format = 2
+layer_0/tile_data = PackedInt32Array(15, 327680, 4, 14, 327680, 4, 13, 327680, 4, 12, 327680, 4, 11, 327680, 4, 10, 327680, 4, 9, 327680, 4, 8, 327680, 4, 7, 327680, 4, 6, 327680, 4, 5, 327680, 4, 4, 327680, 4, 3, 327680, 4, 2, 327680, 4, 1, 327680, 4, 0, 327680, 4, 65536, 327680, 4, 131072, 327680, 4, 196608, 327680, 4, 262144, 327680, 4, 327680, 327680, 4, 393216, 327680, 4, 458752, 327680, 4, 524288, 327680, 4, 589824, 327680, 4, 655360, 327680, 4, 720896, 327680, 4, 786432, 327680, 4, 851968, 327680, 4, 917504, 327680, 4, 917505, 327680, 4, 851969, 327680, 4, 786433, 327680, 4, 720897, 327680, 4, 655361, 327680, 4, 589825, 327680, 4, 524289, 327680, 4, 458753, 327680, 4, 393217, 327680, 4, 327681, 327680, 4, 262145, 327680, 4, 196609, 327680, 4, 131073, 327680, 4, 65537, 327680, 4, 65538, 327680, 4, 131074, 327680, 4, 196610, 327680, 4, 262146, 327680, 4, 327682, 327680, 4, 393218, 327680, 4, 458754, 327680, 4, 524290, 327680, 4, 589826, 327680, 4, 655362, 327680, 4, 720898, 327680, 4, 786434, 327680, 4, 851970, 327680, 4, 917506, 327680, 4, 917507, 327680, 4, 851971, 327680, 4, 786435, 327680, 4, 720899, 327680, 4, 655363, 327680, 4, 589827, 327680, 4, 524291, 327680, 4, 458755, 327680, 4, 393219, 327680, 4, 327683, 327680, 4, 262147, 327680, 4, 196611, 327680, 4, 131075, 327680, 4, 65539, 327680, 4, 65540, 327680, 4, 131076, 327680, 4, 196612, 327680, 4, 262148, 327680, 4, 327684, 327680, 4, 393220, 327680, 4, 458756, 327680, 4, 524292, 327680, 4, 589828, 327680, 4, 655364, 327680, 4, 720900, 327680, 4, 786436, 327680, 4, 851972, 327680, 4, 917508, 327680, 4, 917509, 327680, 4, 851973, 327680, 4, 786437, 327680, 4, 720901, 327680, 4, 655365, 327680, 4, 589829, 327680, 4, 524293, 327680, 4, 458757, 327680, 4, 393221, 327680, 4, 327685, 327680, 4, 262149, 327680, 4, 196613, 327680, 4, 131077, 327680, 4, 65541, 327680, 4, 65542, 327680, 4, 131078, 327680, 4, 196614, 327680, 4, 262150, 327680, 4, 327686, 327680, 4, 393222, 327680, 4, 458758, 327680, 4, 524294, 327680, 4, 589830, 327680, 4, 655366, 327680, 4, 720902, 327680, 4, 786438, 327680, 4, 851974, 327680, 4, 917510, 327680, 4, 917511, 327680, 4, 851975, 327680, 4, 786439, 327680, 4, 720903, 327680, 4, 655367, 327680, 4, 589831, 327680, 4, 524295, 327680, 4, 458759, 327680, 4, 393223, 327680, 4, 327687, 327680, 4, 262151, 327680, 4, 196615, 327680, 4, 131079, 327680, 4, 65543, 327680, 4, 65544, 327680, 4, 131080, 327680, 4, 196616, 327680, 4, 262152, 327680, 4, 327688, 327680, 4, 393224, 327680, 4, 458760, 327680, 4, 524296, 327680, 4, 589832, 327680, 4, 655368, 327680, 4, 720904, 327680, 4, 786440, 327680, 4, 851976, 327680, 4, 917512, 327680, 4, 917513, 327680, 4, 851977, 327680, 4, 786441, 327680, 4, 720905, 327680, 4, 655369, 327680, 4, 589833, 327680, 4, 524297, 327680, 4, 458761, 327680, 4, 393225, 327680, 4, 327689, 327680, 4, 262153, 327680, 4, 196617, 327680, 4, 131081, 327680, 4, 65545, 327680, 4, 65546, 327680, 4, 131082, 327680, 4, 196618, 327680, 4, 262154, 327680, 4, 327690, 327680, 4, 393226, 327680, 4, 458762, 327680, 4, 524298, 327680, 4, 589834, 327680, 4, 655370, 327680, 4, 720906, 327680, 4, 786442, 327680, 4, 851978, 327680, 4, 917514, 327680, 4, 917515, 327680, 4, 851979, 327680, 4, 786443, 327680, 4, 720907, 327680, 4, 655371, 327680, 4, 589835, 327680, 4, 524299, 327680, 4, 458763, 327680, 4, 393227, 327680, 4, 327691, 327680, 4, 262155, 327680, 4, 196619, 327680, 4, 131083, 327680, 4, 65547, 327680, 4, 65548, 327680, 4, 131084, 327680, 4, 196620, 327680, 4, 262156, 327680, 4, 327692, 327680, 4, 393228, 327680, 4, 458764, 327680, 4, 524300, 327680, 4, 589836, 327680, 4, 655372, 327680, 4, 720908, 327680, 4, 786444, 327680, 4, 851980, 327680, 4, 917516, 327680, 4, 917517, 327680, 4, 851981, 327680, 4, 786445, 327680, 4, 720909, 327680, 4, 655373, 327680, 4, 589837, 327680, 4, 524301, 327680, 4, 458765, 327680, 4, 393229, 327680, 4, 327693, 327680, 4, 262157, 327680, 4, 196621, 327680, 4, 131085, 327680, 4, 65549, 327680, 4, 65550, 327680, 4, 131086, 327680, 4, 196622, 327680, 4, 262158, 327680, 4, 327694, 327680, 4, 393230, 327680, 4, 458766, 327680, 4, 524302, 327680, 4, 589838, 327680, 4, 655374, 327680, 4, 720910, 327680, 4, 786446, 327680, 4, 851982, 327680, 4, 917518, 327680, 4, 917519, 327680, 4, 851983, 327680, 4, 786447, 327680, 4, 720911, 327680, 4, 655375, 327680, 4, 589839, 327680, 4, 524303, 327680, 4, 458767, 327680, 4, 393231, 327680, 4, 327695, 327680, 4, 262159, 327680, 4, 196623, 327680, 4, 131087, 327680, 4, 65551, 327680, 4)
+
+[node name="Idea" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.054
+anchor_right = 0.621
+anchor_bottom = 0.246
+offset_left = -2.00001
+offset_top = 16.04
+offset_right = -1.97601
+offset_bottom = 15.96
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 30
+text = "Idea"
+horizontal_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="Idea" type="Label" parent="Idea"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 1.087
+anchor_right = 0.925
+anchor_bottom = 2.087
+offset_left = -11.725
+offset_top = -34.002
+offset_right = 13.725
+offset_bottom = -49.002
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 25
+text = "Ezequiel Baez"
+horizontal_alignment = 1
+
+[node name="Musica" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.054
+anchor_right = 0.621
+anchor_bottom = 0.246
+offset_top = 169.04
+offset_right = 0.0240021
+offset_bottom = 168.96
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 30
+text = "Musica"
+horizontal_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="Idea" type="Label" parent="Musica"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 1.087
+anchor_right = 0.925
+anchor_bottom = 2.087
+offset_left = -11.725
+offset_top = -34.002
+offset_right = 13.725
+offset_bottom = -49.002
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 25
+text = "Hugo Baez"
+horizontal_alignment = 1
+
+[node name="Prog" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.712
+anchor_right = 0.695
+anchor_bottom = 0.904
+offset_left = 5.0
+offset_top = -34.88
+offset_right = 5.07999
+offset_bottom = -34.96
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 30
+text = "Programación"
+horizontal_alignment = 1
+
+[node name="1" type="Label" parent="Prog"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.044
+anchor_top = 0.37
+anchor_right = 1.029
+anchor_bottom = 1.043
+offset_left = 0.0159988
+offset_top = -0.0200005
+offset_right = 0.0439987
+offset_bottom = 0.0219955
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 25
+text = "Ezequiel Baez"
+horizontal_alignment = 1
+
+[node name="2" type="Label" parent="Prog"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 1.087
+anchor_right = 0.925
+anchor_bottom = 2.087
+offset_left = -12.55
+offset_top = -19.002
+offset_right = 12.9
+offset_bottom = -34.002
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 25
+text = "Guillermo Galeano"
+horizontal_alignment = 1
+
+[node name="Prog2" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.254
+anchor_top = 0.517
+anchor_right = 0.699
+anchor_bottom = 0.708
+offset_left = 4.976
+offset_top = -21.08
+offset_right = 5.05598
+offset_bottom = -20.92
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 30
+text = "Arte y Diseño"
+horizontal_alignment = 1
+
+[node name="1" type="Label" parent="Prog2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.044
+anchor_top = 0.348
+anchor_right = 1.029
+anchor_bottom = 1.0
+offset_left = 0.0160003
+offset_top = -2.008
+offset_right = 0.0439987
+offset_bottom = -1.0
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 25
+text = "Milena Rodas"
+horizontal_alignment = 1
+
+[node name="Prog3" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.273
+anchor_top = 0.258
+anchor_right = 0.719
+anchor_bottom = 0.45
+offset_left = -0.888
+offset_top = 3.08
+offset_right = -1.06401
+offset_bottom = 3.0
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 30
+text = "Dirección"
+horizontal_alignment = 1
+
+[node name="1" type="Label" parent="Prog3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.044
+anchor_top = 0.37
+anchor_right = 0.925
+anchor_bottom = 2.087
+offset_left = 0.0160003
+offset_top = -0.0200005
+offset_right = 11.9
+offset_bottom = -48.002
+theme_override_fonts/font = ExtResource("2_whdmf")
+theme_override_font_sizes/font_size = 25
+text = "Marcos Ruiz Diaz"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_nvj02")
+autoplay = true

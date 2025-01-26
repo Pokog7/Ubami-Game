@@ -1,0 +1,10 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://b8h2bki0u1yen"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3s626"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hjude"]
+texture = SubResource("AtlasTexture_3s626")
+modulate_color = Color(0.407843, 0.207843, 0.145098, 0.780392)
+
+[resource]
+Label/styles/normal = SubResource("StyleBoxTexture_hjude")

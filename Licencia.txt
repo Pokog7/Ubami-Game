@@ -1,0 +1,22 @@
+Licencia de Uso del Software UBAMI
+
+Propietario del Software: Este software, UBAMI, es propiedad de 
+Marcos Ruiz Diaz
+Guillermo Galeano
+Cesar Ezequiel Baez.
+
+Derechos de Uso: Se otorga al usuario una licencia no exclusiva, no transferible para usar el software únicamente para fines personales y no comerciales.
+
+Restricciones:
+
+No se permite la venta, alquiler o distribución del software a terceros.
+
+No se permite modificar, adaptar, traducir, o crear trabajos derivados basados en el software.
+
+Derechos de Autor: Todos los derechos de autor y otros derechos de propiedad intelectual sobre el software y su contenido, incluidos los recursos gráficos y de sonido, pertenecen a los propietarios mencionados anteriormente.
+
+Recursos de Terceros: Las texturas de OpenGameArt utilizadas en este software están bajo la licencia de USO y se incluyen de acuerdo con sus términos y condiciones.
+
+Limitación de Responsabilidad: Los creadores no serán responsables de ningún daño, pérdida de datos, o cualquier otro tipo de daño indirecto o consecuente que surja del uso del software.
+
+Aceptación de la Licencia: Al utilizar este software, el usuario acepta los términos y condiciones establecidos en esta licencia.

@@ -1,0 +1,86 @@
+[gd_scene load_steps=11 format=3 uid="uid://bykp1g022ubsp"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_d23cs"]
+[ext_resource type="PackedScene" uid="uid://25pvqk6bdob7" path="res://scenes/objects/bubble.tscn" id="2_g1q2l"]
+[ext_resource type="Texture2D" uid="uid://dmfq6hvb3r7gx" path="res://assetsgraphics/umiv2.png" id="3_pkd1r"]
+[ext_resource type="Texture2D" uid="uid://br5ynhkwyiabs" path="res://assetsgraphics/umiv_idle.png" id="4_8dqh1"]
+[ext_resource type="Texture2D" uid="uid://ckbq22purrd6x" path="res://assetsgraphics/umiv3.png" id="5_28r6w"]
+[ext_resource type="Texture2D" uid="uid://b7evgccpslxio" path="res://assetsgraphics/umiv_fire.png" id="6_itg34"]
+[ext_resource type="Texture2D" uid="uid://deitbomrrp4hg" path="res://assetsgraphics/umiv1.png" id="7_tgeol"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_itc7f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_pkd1r")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8dqh1")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_28r6w")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_itg34")
+}],
+"loop": false,
+"name": &"shoot",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_tgeol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pkd1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_28r6w")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2fa37"]
+size = Vector2(10, 14)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cyscl"]
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+collision_layer = 0
+script = ExtResource("1_d23cs")
+bubble_tscn = ExtResource("2_g1q2l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_itc7f")
+animation = &"jump"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_2fa37")
+
+[node name="HitBox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+shape = SubResource("CircleShape2D_cyscl")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

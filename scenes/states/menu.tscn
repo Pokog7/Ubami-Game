@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8nvfvktyworr"]
+
+[ext_resource type="Script" path="res://scenes/states/menu.gd" id="1_6wswx"]
+[ext_resource type="FontFile" uid="uid://bcrd1e2884wwj" path="res://assetsgraphics/Resources/Cloude_Regular_1.02_edit.otf" id="1_f17c1"]
+[ext_resource type="Theme" uid="uid://b8h2bki0u1yen" path="res://assetsgraphics/Resources/menu.tres" id="1_q2j63"]
+[ext_resource type="Texture2D" uid="uid://cwvjy5s4p1rip" path="res://assetsgraphics/503.jpg" id="2_vik82"]
+[ext_resource type="Texture2D" uid="uid://bh18n12t1pgoq" path="res://assetsgraphics/Umi_Cover.png" id="5_tblvj"]
+[ext_resource type="AudioStream" uid="uid://jn5t7pf0f4cx" path="res://assetsgraphics/Resources/MenuMusic.wav" id="6_mngxb"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6wswx")
+
+[node name="503" type="Sprite2D" parent="."]
+position = Vector2(133.094, 119.844)
+scale = Vector2(0.0654217, 0.0685237)
+texture = ExtResource("2_vik82")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.146
+anchor_top = 0.354
+anchor_right = 0.432
+anchor_bottom = 0.794
+offset_left = 0.123989
+offset_top = 0.0400009
+offset_right = -0.0920029
+offset_bottom = 4.43999
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inicio" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_q2j63")
+theme_override_fonts/font = ExtResource("1_f17c1")
+theme_override_font_sizes/font_size = 25
+text = "Iniciar"
+
+[node name="Creditos" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_f17c1")
+theme_override_font_sizes/font_size = 25
+text = "Créditos"
+
+[node name="Salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_f17c1")
+theme_override_font_sizes/font_size = 25
+text = "Salir"
+
+[node name="Container" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15
+anchor_top = 0.121
+anchor_right = 0.428
+anchor_bottom = 0.375
+offset_left = 0.099987
+offset_top = -0.0400009
+offset_right = -0.0680237
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.615686, 0, 0.996078, 1)
+theme_override_fonts/font = ExtResource("1_f17c1")
+theme_override_font_sizes/font_size = 60
+text = "UBAMI"
+
+[node name="UmiCover" type="Sprite2D" parent="."]
+position = Vector2(192.25, 137.375)
+scale = Vector2(0.0708333, 0.0708333)
+texture = ExtResource("5_tblvj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_mngxb")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Inicio" to="." method="_on_inicio_pressed"]
+[connection signal="pressed" from="VBoxContainer/Creditos" to="." method="_on_creditos_pressed"]
+[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
